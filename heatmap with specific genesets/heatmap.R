@@ -19,7 +19,7 @@ row_reorder <- F
 
 
 if(count_matrix_file_name=='.csv'){
-  data <- read.csv(list.files('',pattern-'.csv')[1],row.names = 1)
+  data <- read.csv(list.files('',pattern='.csv')[1],row.names = 1)
   }else{
   data <- read.csv(count_matrix_file_name,row.names = 1)
 }
