@@ -18,8 +18,11 @@ row_reorder <- F
 
 
 
-
-data <- read.csv(count_matrix_file_name,row.names = 1)
+if(count_matrix_file_name=='.csv'){
+  data <- read.csv(list.files('',pattern-'.csv')[1],row.names = 1)
+  }else{
+  data <- read.csv(count_matrix_file_name,row.names = 1)
+}
 if(length(grep('_',rownames(data)))!=0 ){
   data$genes <- lapply(rownames(data),function(x) strsplit(x,'_')[[1]][2]) %>% unlist()
 }else{
