@@ -6,7 +6,7 @@ library(pheatmap)
 
 #######################################################################################################################  All configuration
 
-count_matrix_file_name <- 'DEseq2_normalized_count_matrixrowsum_gene_count_threshold_1_GSEASPFTumorbearing_163_GFTumorbearing_163.txt_.csv'
+count_matrix_file_name <- '.csv'
 
 geneset_folder <- 'genesets'
 
@@ -47,7 +47,7 @@ raw_plot <- function(path){
   
   #### candidata _reorder
   if(row_reorder==T){
-    plot_data <- plot_data[order(rowSums(plot_data[,c(1,2)]),decreasing = T),]}
+    plot_data <- plot_data[order(plot_data[,1]),decreasing = T),]}
 
   pdf(paste0(gsub('.txt','',basename(path)),'_clustered.pdf'),width=ncol(plot_data)*1,height=length(rownames(plot_data))*0.3)
   pheatmap(as.matrix(plot_data),col = colorRampPalette(c('white','lightgreen'))(100),cluster_rows=row_cluster,cluster_cols=F,border_color=NA,scale='row',name = 'scaled expression',)%>%print()
