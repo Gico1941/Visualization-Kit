@@ -8,4 +8,5 @@ Recursively read all GSEA report file under 'GSEA path', filter out pathway by F
 GSEA_bubble(GSEA_folder='GSEA',GSEA_fdr_hold=0.5,fdr_top=20)
 ```
 Example Result (Generated with GSE211061 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE211061):
+
 <img src="https://github.com/Gico1941/Visualization-Kit/assets/127346166/18c9fbba-5b29-4148-a7d3-9804d8c43907" width="200" />
