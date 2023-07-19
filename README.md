@@ -1,5 +1,5 @@
 # Visualization-Kit
-## heatmap with gene-sets (Geneset can be customized or refer to GSEA database https://www.gsea-msigdb.org/gsea/msigdb/human/genesets.jsp): 
+## heatmap with gene-sets (Geneset can be custom or refer to GSEA database https://www.gsea-msigdb.org/gsea/msigdb/human/genesets.jsp): 
 
 Recutsively plot heatmaps for all geneset files in ./geneset folder, count matrix .csv file should be normalized (e.g. DEseq2 normalized)
 
