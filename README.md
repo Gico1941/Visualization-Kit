@@ -16,3 +16,13 @@ GSEA_bubble(GSEA_folder='GSEA',GSEA_fdr_hold=0.5,fdr_top=20)
 Example Result (Generated with GSE211061):
 
 <img src="https://github.com/Gico1941/Visualization-Kit/assets/127346166/18c9fbba-5b29-4148-a7d3-9804d8c43907" width="200" />
+
+## Volcano plot for DESeq2 : 
+```
+volcano_plot_p_FC(DEseq2_result %>% as.data.frame() ,LogFoldC_col= 'log2FoldChange', p_v_col = 'pvalue',
+                          p_hold = 0.1, FC_hold = 0.5,MAX=15,top_display=15) 
+
+```
+<img src="https://github.com/Gico1941/Visualization-Kit/assets/127346166/5f8cad42-aff4-42f9-b6d7-1ba500ab4ca3" width="200" />
+
+
